@@ -137,7 +137,7 @@ def main(config, system=None):
     # python analyze_dhdl.py -fA ../stateA/frame*/dhdl*.xvg -fB ../stateB/frame*/dhdl*.xvg --nbins 25 -t 293 --reverseB
     global_log.info(ensemble+" Step 11: pmx analyse: Calculate free energies from fast growth thermodynamic integration simulations")
     global_paths["step11_pmx_analyse"]["input_A_xvg_zip_path"]=dhdlA_path
-    global_paths["step11_pmx_analyse"]["input_A_xvg_zip_path"]=dhdlB_path
+    global_paths["step11_pmx_analyse"]["input_B_xvg_zip_path"]=dhdlB_path
     Analyse(**global_paths["step11_pmx_analyse"], properties=global_prop["step11_pmx_analyse"]).launch()
 
     elapsed_time = time.time() - start_time

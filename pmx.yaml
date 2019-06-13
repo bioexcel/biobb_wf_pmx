@@ -127,10 +127,9 @@ step10_gmx_mdrun:
 
 step11_pmx_analyse:
   paths:
-    input_A_xvg_zip_path: stateA.dhdls.zip
-    input_B_xvg_zip_path: stateB.dhdls.zip
+    input_A_xvg_zip_path: dhdlA.zip
+    input_B_xvg_zip_path: dhdlB.zip
     output_result_path: pmx.outputs
     output_work_plot_path: pmx.plots.png
   properties:
     reverseB : True
-    gmxlib: /Users/pau/other_projects/pmx/pmx/data/mutff45
